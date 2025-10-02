@@ -4,9 +4,9 @@ import DefaultNav from './components/atoms/molecules/navigation/DefaultNav';
 function App() {
 
   return (
-    <>
+    <div className='w-full'>
       <DefaultNav />
-    </>
+    </div>
   )
 }
 

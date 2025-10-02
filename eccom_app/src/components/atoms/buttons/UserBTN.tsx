@@ -1,6 +1,6 @@
 import type { DefaultBTNInter } from "../../../types/componentInters/DefaultBTNInter";
 
-const DefaultBTN: React.FC<DefaultBTNInter> = ({
+const UserBTN: React.FC<DefaultBTNInter> = ({
     btnText,
     clickedFun,
     disabled,
@@ -11,10 +11,11 @@ const DefaultBTN: React.FC<DefaultBTNInter> = ({
         <button
             onClick={clickedFun}
             disabled={disabled}
+            className="rounded-full"
                 >
             {btnText}
         </button>
     )
 }
 
-export default DefaultBTN;
+export default UserBTN;

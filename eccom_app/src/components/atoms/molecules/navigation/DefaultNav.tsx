@@ -1,5 +1,7 @@
 import DefaultBTN from "../../buttons/DefaultBTN";
+import UserBTN from "../../buttons/UserBTN";
 import Header from "../../text/Header";
+import SearchBar_BTN from "../filter_search/SearchBar_BTN";
 
 function DefaultNav() {
   
@@ -8,11 +10,16 @@ function DefaultNav() {
   };
 
   return (
-    <nav className="nav_bar_default">
+    <nav className="nav_bar_default py-1 w-full flex justify-between items-center">
 
-        <Header title={"Bazaar"} />
+        <Header title={"BAZAAR"} />
 
-        <DefaultBTN btnText="Default Button" clickedFun={clickedFun}/>
+        <SearchBar_BTN />
+
+        <UserBTN btnText="H" clickedFun={clickedFun}/>
+
+        <DefaultBTN btnText="Customer" clickedFun={clickedFun}/>
+
     </nav>
   )
 }
