@@ -1,5 +1,6 @@
 export interface DefaultBTNInter {
-    btnText: string
+    btnText: string,
     clickedFun: (event: React.MouseEvent<HTMLButtonElement>) => void,
-    disabled?: boolean
+    disabled?: boolean,
+    style?: string
 }
