@@ -1,19 +1,13 @@
 import './App.css'
-import DefaultBTN from './components/atoms/buttons/DefaultBTN'
+import DefaultNav from './components/atoms/molecules/navigation/DefaultNav';
 
 function App() {
-  
-  const clickedFun = () => {
-    alert('Button clicked!');
-  };
 
   return (
     <>
-      <div className="card">
-        <DefaultBTN btnText="Default Button" clickedFun={clickedFun}/>
-      </div>
+      <DefaultNav />
     </>
   )
 }
 
-export default App
+export default App;
