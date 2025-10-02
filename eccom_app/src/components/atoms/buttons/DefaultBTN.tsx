@@ -1,6 +1,6 @@
-import type { DefaultBTNInter } from "../../../types/DefaultBTNInter";
+import type { DefaultBTNInter } from "../../../types/componentInters/DefaultBTNInter";
 
-const DefaultBTN: React.FC<DefaultBTNInter>= ({
+const DefaultBTN: React.FC<DefaultBTNInter> = ({
     btnText,
     clickedFun,
     disabled

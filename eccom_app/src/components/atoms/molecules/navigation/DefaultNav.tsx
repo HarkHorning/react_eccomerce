@@ -1,4 +1,5 @@
 import DefaultBTN from "../../buttons/DefaultBTN";
+import Header from "../../text/Header";
 
 function DefaultNav() {
   
@@ -7,11 +8,12 @@ function DefaultNav() {
   };
 
   return (
-    <>
-      <nav className="nav_bar_default">
+    <nav className="nav_bar_default">
+
+        <Header title={"Bazaar"} />
+
         <DefaultBTN btnText="Default Button" clickedFun={clickedFun}/>
-      </nav>
-    </>
+    </nav>
   )
 }
 
